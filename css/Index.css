@@ -1,0 +1,509 @@
+/* Desktop View */
+body {
+    background: url("../images/Desktop BG.png") no-repeat center center/cover;
+    background-size: cover;
+    height: 105vh;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+    padding: 0;
+}
+
+.men {
+    font-size: 5em;
+    color: white;
+    margin-left: 2em;
+    padding: 0 1.5em;
+    border-radius: 10px;
+    transition: transform 0.6s, background-color 0.6s, color 0.3s;
+}
+
+.photo1 {
+    display: block;
+    height: 30%;
+    width: 30%;
+    margin-top: -1em;
+    margin: 0 auto;
+}
+
+.women {
+    margin-top: -0.4em;
+    font-size: 5em;
+    color: white;
+    padding: 0 1em;
+    border-radius: 10px;
+    transition: transform 0.6s, background-color 0.6s, color 0.3s;
+    position: absolute;
+    right: 2em;
+}
+
+.men:hover, .women:hover {
+    background: silver;
+    color: black;
+}
+
+.contents{
+    margin-top: 1.2em;
+    border: none;
+
+}
+
+.head {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0px -15px;
+    margin: -2em 0;
+    position: relative;
+    text-decoration: none;   
+}
+
+header{
+    margin-top: 2em;
+}
+
+.head h1, .men, .women {
+    white-space: nowrap;
+}
+
+.head h1 {
+    font-size: 4.5vw; 
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+}
+.head a{
+    text-decoration: none;
+}
+
+
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.logout-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin-top: 3.7em;
+    margin-right: 1em;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.head nav {
+    margin-left: -0.5em;
+    margin-right: 5vw; 
+}
+
+
+#nav1, #nav2, #nav3, #nav4 {
+    padding-right: 2em;
+    font-size: 1.3em;
+}
+
+nav {
+    display: flex;
+    gap: 20px;    
+}
+
+nav a {
+    text-decoration: none;
+    font-size: clamp(1.3em, 2vw, 2.5em);
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-out, background-color 0.5s ease-out;
+}
+
+nav a:hover {
+    transform: scale(1.10);
+}
+
+
+.suggestions {
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    width: 12%;
+    max-height: 120px;
+    overflow-y: auto;
+    display: none;
+    margin-top: 10em;
+    z-index: 1000;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    transition: background 0.3s ease-in-out;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none; 
+    margin-bottom: 5.5em;
+}
+
+.suggestion-item:hover {
+    background: #f8f9fa;
+    color: #007bff; 
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    margin-right: 11em;
+    margin-left: -4em;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    width: 150px;
+    background: transparent;
+    color: white;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.search-bar i {
+    font-size: 18px;
+    color: white;
+}
+
+.cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+p{
+    color: white; 
+    text-align: center;
+    margin-top: 3em;
+    margin-left: 32em;
+}
+
+footer{
+    margin-right: 34em;
+}
+
+
+
+
+/* Tablet View (768px - 1024px) */
+@media (min-width: 1024px) { 
+    .logout-btn {
+        background: transparent;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .logout-btn:hover {
+        transform: scale(1.4); 
+    }
+
+    #Logout {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: white;
+        transition: color 0.3s;
+    }
+
+    #Logout:hover {
+        color: #f0f0f0; 
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: url("../images/Tablet BG.png") no-repeat center center fixed;
+        background-size: cover;    
+    }
+
+    .head {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        gap: 1em; 
+    }
+
+    .head h1 {
+        order: -1; 
+        font-size: 4.5em;
+        text-align: center;
+        margin: 0;
+        margin-top: 0.8em;
+    }
+
+    .head nav {
+        margin-top: 2em;
+        margin-left: 6em;
+        order: 1; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        display: none;
+    }
+
+    .search-bar input {
+        width: 200px; 
+    }
+
+    .cart-icon {
+        font-size: 20px;
+    }
+
+    .logout-btn {
+        background: transparent;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .logout-btn:hover {
+        transform: scale(1.4); 
+    }
+
+    #Logout {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: white;
+        transition: color 0.3s;
+    }
+
+    #Logout:hover {
+        color: #f0f0f0; 
+    }
+
+    #nav1, #nav2, #nav3, #nav4{
+        font-size: 1.8em;
+    }
+
+    .men{
+        font-size: 6em;
+        text-align: center;
+        float: none;
+        display: block;
+        margin: 0.5em auto 1em auto;
+        text-decoration: none;
+        transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-out, background-color 0.5s ease-out;
+
+    }
+
+    .men a, .women a{
+        text-decoration: none; 
+    }
+
+    .women{
+        font-size: 6em;
+        text-align: center;
+        float: none;
+        padding: 0 2.1em;
+        display: block;
+        margin-right: -1.8em;
+        margin-top: 0.2em;
+        text-decoration: none;
+        transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-out, background-color 0.5s ease-out;
+    }
+
+
+    a{
+        text-decoration: none;
+    }
+
+    nav a{
+        text-decoration: none;
+    }
+    .photo1 {
+        display: block;
+        margin: -2em auto 1em 8.5em;
+        width: 75%;
+        height: 75%;
+    }
+}
+
+/* Mobile View (Below 768px) */
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: url("../images/Mobile BG.png") no-repeat center center fixed;
+        background-size: cover;    
+    }
+
+    body a{
+        text-decoration: none;
+    }
+
+    .contents{
+        margin-left: -1em;
+    }
+
+    .photo1{
+        height: 80%;
+        width: 100%;
+        margin-left: 1em;
+    }
+
+    .head h1{
+        margin-bottom: -2em;
+        margin-top: 0.95em;
+        margin-left: -0.8em;
+        font-size: 3.2em;
+    }
+
+    .logout-btn{
+        margin-top: 48em;
+        margin-right: 1.5em;
+        background: transparent;
+        color: rgb(0, 0, 0);
+        padding: 1em 6em;
+        transition: box-shadow 0.3s;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                    0 0 20px rgba(255, 255, 255, 0.6), 
+                    0 0 30px rgba(255, 255, 255, 0.4);
+
+    }
+
+    #Logout{
+        font-size: 1.5em;
+        color: rgb(255, 255, 255);
+    }
+
+    #desktop {
+        flex-grow: 1; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+
+    .men{
+        margin-top: 1.5em; 
+        margin-left: -0.2em;
+        font-size: 5em; 
+        font-weight: bold;
+    }
+
+    .women{
+        font-size: 5em;
+        margin-right: -3.7em;
+    }
+
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: white;
+        width: 200px;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        z-index: 1000;
+        opacity: 0;  
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    nav a {
+        display: block;
+        padding: 10px;
+        margin-left: 0.8em;
+        font-size: 1.2em;
+        color: black;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        background: #444;
+        border-radius: 5px;
+    }
+
+    .hamburger {
+        margin: 1em -0.3em 0 0; 
+        display: block;
+        font-size: 2.5em;
+        color: white;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    nav.show {
+        color: white;
+        opacity: 1;
+        visibility: visible;
+        background: rgb(69, 67, 67);
+        transform: translateY(0);
+    }
+
+    #mobile-menu{
+        margin-top: 3.5em;
+        margin-right: 0em;
+    }
+
+    .hidden {
+        margin-top: 1em;
+        display: none;
+        color: white;
+    }
+
+    #nav1, #nav2, #nav3, #nav4{
+        color: white;
+    }
+    
+
+}

@@ -1,0 +1,144 @@
+/* Desktop View */
+body {
+    background-color: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 26px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 30px auto 30px auto;
+    background: #333;
+    color: white;
+    font-size: 20px;
+}
+
+th, td {
+    border: 1px solid #444;
+    padding: 18px;
+    text-align: center;
+    font-size: 22px;
+}
+
+th {
+    background: #555;
+}
+
+.btn {
+    display: inline-block;
+    padding: 16px 32px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn-received {
+    background-color: green;
+}
+
+.btn-received:hover {
+    background-color: darkgreen;
+}
+
+.btn-history {
+    background-color: orange;
+}
+
+.btn-history:hover {
+    background-color: darkorange;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 16px 32px;
+    background: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.back-btn:hover {
+    background: darkblue;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px auto;
+}
+
+.order-header {
+    text-align: center;
+    font-weight: bold;
+    padding: 16px;
+    background: #555;
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.grand-total {
+    text-align: right;
+    font-weight: bold;
+    padding: 20px;
+    background: #555;
+    margin: 20px auto;
+    width: 90%;
+    font-size: 24px;
+}
+
+.message {
+    text-align: center;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.success {
+    color: lime;
+}
+
+.error {
+    color: red;
+}
+
+/* Mobile View (Below 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 26px;
+    }
+    table {
+        width: 100%;
+        font-size: 24px;
+    }
+    th, td {
+        padding: 22px;
+        font-size: 26px;
+    }
+    .btn {
+        font-size: 26px;
+        padding: 18px 36px;
+    }
+    .order-header, .grand-total {
+        font-size: 28px;
+    }
+}
+
+/* Tablet View (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    table {
+        margin-left: -0.5em auto -0.5em auto;
+        width: 70%;
+    }
+    
+}

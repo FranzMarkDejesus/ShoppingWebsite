@@ -1,0 +1,84 @@
+/* Desktop View */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url("../images/Desktop BG.png") no-repeat center center/cover;
+    background-color: #0d0d0d;
+    font-family: 'Josefin Slab', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Tablet View (768px - 1024px) */
+@media (max-width: 1024px) {
+    body {
+        background: url("../images/Tablet BG.png") no-repeat center center/cover;
+    }
+}
+
+/* Mobile View (Below 768px) */
+@media (max-width: 768px) {
+    body {
+        background: url("../images/Mobile BG.png") no-repeat center center/cover;
+    }
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem 3rem 2rem 2rem;
+    border-radius: 12px;
+    width: 350px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+h1 {
+    font-family: 'PT Serif', cursive;
+    color:rgb(199, 192, 192);
+    text-align: center;
+    font-size: 3.1rem;
+}
+label {
+    color:rgb(164, 149, 149);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background: #1a1a1a;
+    color:rgb(255, 255, 255);
+}
+button {
+    display: block;
+    margin: 0 auto; 
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color:rgb(156, 45, 47);
+    color: rgb(199, 185, 185);
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+
+    background-color: #621b1c;
+}
+p {
+    color:rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 1rem;
+}
+p a {
+    color:rgb(255, 255, 255);
+    text-decoration: underline;
+}

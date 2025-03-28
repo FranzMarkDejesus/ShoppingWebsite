@@ -1,0 +1,465 @@
+/* Desktop View */
+body {
+    background: radial-gradient(circle at center, #363333, #1c1b1b);
+}
+
+.head {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0;
+    margin: -2em -0.3em;
+    position: sticky;
+    top: 0;
+    background-color: #222222;
+    z-index: 1000;
+    height: 100px;
+    border-bottom: 1px solid rgb(69, 67, 67);
+}
+
+.head h1 {
+    font-size: 3.5em;
+    margin-left: 0.5em;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-right: 1.2em;
+
+}
+
+.para {
+    text-align: justify;
+    text-indent: 3em;
+}
+
+.hamburger {
+    display: none;
+}
+.head a{
+    text-decoration: none;
+}
+
+.head nav {
+    margin-right: 5em;
+}
+
+#nav1, #nav2, #nav3, #nav4 {
+    padding-right: 2em;
+    font-size: 1.3em;
+}
+
+nav {
+    display: flex;
+    gap: 20px; 
+    
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-out, background-color 0.5s ease-out;
+}
+
+nav a:hover {
+    transform: scale(1.10);
+}
+
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: -4em;
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    width: 150px;
+    background: transparent;
+    color: white;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.search-bar i {
+    font-size: 18px;
+    color: white;
+}
+
+
+.cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.suggestions {
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    width: 12%;
+    max-height: 120px;
+    overflow-y: auto;
+    display: none;
+    margin-top: 10em;
+    z-index: 1000;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    transition: background 0.3s ease-in-out;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none; 
+    margin-bottom: 5.5em;
+}
+
+.suggestion-item:hover {
+    background: #f8f9fa;
+    color: #007bff; 
+}
+
+
+h2, .contact-us {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+.about-us, .our-story{
+    color: white;
+    font-size: 20px;
+    max-width: 800px;  
+    margin: 50px auto; 
+    text-align: left;   
+    
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.fa:hover {
+opacity: 0.7;
+}
+
+
+.fa {
+padding: 20px;
+font-size: 30px;
+width: 30px;
+text-align: center;
+text-decoration: none;
+border-radius: 50%;
+}
+
+.social {
+    width: 25em;
+    margin: auto;
+    text-align: center;
+}
+    
+.social img {
+    max-width: 6.5%;
+    filter: invert();
+    vertical-align: bottom;
+    padding: 0 10px;
+}
+
+/* Mobile View (Below 768px) */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    margin-top: 5em;
+}
+
+
+@media (min-width: 1025px){
+    .logout-btn {
+        margin-right: 3em;
+        background: transparent;
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin-left: -2em;
+    }
+
+
+    .logout-btn:hover {
+        transform: scale(1.2); 
+    }
+
+
+    #Logout {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: white;
+        transition: color 0.3s;
+        margin-left: -10em;
+    }
+
+
+    #Logout:hover {
+        color: #f0f0f0; 
+    }
+}
+
+
+/* Tablet View (768px - 1024px) */
+@media (max-width: 1024px) {
+    .logout-btn {
+        display: none;
+    }
+    
+    body{
+        background: url("../images/Tablet BG.png") no-repeat center center/cover;
+        background-size: cover;
+        overflow: hidden; 
+    }
+
+    .head {
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+        height: auto;
+        padding: 10px 2.5em; 
+    }
+
+    .head h1 {
+        font-size: 3.5em; 
+        text-align: left;
+        margin: 0;
+        white-space: nowrap;
+        padding: 0.2em 0.6em 0.2em 0;
+        margin-left: -0.2em;
+
+    }
+
+    .head nav {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        gap: 15px;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .search-container {
+        display: none; 
+    }
+
+    #nav1, #nav2, #nav3, #nav4 {
+        font-size: 1em; 
+    }
+
+    .search-bar input {
+        width: 200px;
+    }
+
+    .cart-icon {
+        font-size: 20px;
+    }
+
+
+    .men, .women {
+        font-size: 4em;
+        text-align: center;
+        float: none;
+        display: block;
+        margin: 1.5em auto 1em auto;
+        text-decoration: none;
+        transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-out, background-color 0.5s ease-out;
+
+    }
+
+    .men a, .women a{
+        text-decoration: none; 
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    nav a{
+        text-decoration: none;
+    }
+    .photo1 {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .social {
+        margin-bottom: -10em;
+    }
+
+    footer{
+        margin-top: 32em; 
+        color: white;
+        text-align: center;
+    }
+    footer p{
+        margin: 0 auto;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        height: auto; 
+        display: block;
+        overflow: auto; 
+        background: url("../images/Mobile BG.png") no-repeat center center/cover;
+        background-size: cover;
+    }
+
+    .photo1{
+        height: 80%;
+        width: 100%;
+        margin-left: 0.2em;
+    }
+
+    .head {
+        margin-left: -1em;
+        padding: 1em 2em 1em 1em; 
+        margin-right: -1em;
+    }
+
+
+    .head h1{
+        margin-top: 0em;
+        margin-left: 0.5em;
+        font-size: 2.5em;
+    }
+
+    #desktop {
+        flex-grow: unset; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: white;
+        width: 200px;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        z-index: 1000;
+        opacity: 0;  
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    nav a {
+        margin-right: -1em;
+        display: block;
+        padding: 10px;
+        font-size: 1.2em;
+        color: black;
+        text-decoration: none;
+    }
+
+    #mobile-menu{
+        margin-top: 2em;
+        margin-right: -1em;
+    }
+
+    nav a:hover {
+        background: #444;
+        border-radius: 5px;
+    }
+
+    .hamburger {
+        margin: 0.3em 0.3em 0 0; 
+        display: block;
+        font-size: 2.5em;
+        color: white;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    nav.show {
+        color: white;
+        opacity: 1;
+        visibility: visible;
+        background: rgb(69, 67, 67);
+        transform: translateY(0);
+    }
+
+    .hidden {
+        display: none;
+        color: white;
+    }
+
+    .social {
+        width: fit-content;
+    }
+
+    footer {
+        font-size: 1em;
+        text-align: center;
+        padding: 10px 0;
+        color: white;
+    }
+
+    #nav1, #nav2, #nav3, #nav4{
+        color: white;
+    }
+    
+    p {
+        text-align: justify;
+    }
+
+}
